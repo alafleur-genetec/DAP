@@ -23094,7 +23094,8 @@
 											"description": "**alarm:** Alarm GUID or logical ID\n**alarmUrl:** URL to display in the tile"
 										}
 									]
-								}
+								},
+								"description": "Set the URL for the alarm procedure."
 							},
 							"response": [
 								{
