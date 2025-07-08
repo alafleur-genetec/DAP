@@ -22990,7 +22990,7 @@
 										{
 											"key": "q",
 											"value": "entity={{alarm}},ReactivationThreshold={{value}}",
-											"description": "**alarm:** Alarm GUID or logical ID"
+											"description": "- **alarm:** Alarm GUID or logical ID\n- **recipient:** Recipient GUID or logical ID"
 										}
 									]
 								},
@@ -23019,7 +23019,7 @@
 										{
 											"key": "q",
 											"value": "entity={{alarm}},AlarmColor={{color}}",
-											"description": "**alarm:** Alarm GUID or logical ID\n**color:** Color"
+											"description": "- **alarm:** Alarm GUID or logical ID\n- **color:** Color"
 										}
 									]
 								},
@@ -23092,7 +23092,7 @@
 										{
 											"key": "q",
 											"value": "entity={{alarm}},AlarmProcedureUrl={{alarmUrl}}",
-											"description": "**alarm:** Alarm GUID or logical ID\n**alarmUrl:** URL to display in the tile"
+											"description": "- **alarm:** Alarm GUID or logical ID\n- **alarmUrl:** URL to display in the tile"
 										}
 									]
 								},
