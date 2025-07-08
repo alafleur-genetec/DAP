@@ -22979,7 +22979,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/entity?q=entity={{alarm}},ReactivationThreshold={{value}}",
+									"raw": "{{url}}/entity?q=entity={{alarm}},ReactivationThreshold={{threshold}}",
 									"host": [
 										"{{url}}"
 									],
@@ -22989,8 +22989,8 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "entity={{alarm}},ReactivationThreshold={{value}}",
-											"description": "- **alarm:** Alarm GUID or logical ID\n- **value:** Reactivation threshold (TimeSpan)"
+											"value": "entity={{alarm}},ReactivationThreshold={{threshold}}",
+											"description": "- **alarm:** Alarm GUID or logical ID\n- **threshold:** Reactivation threshold (TimeSpan)"
 										}
 									]
 								},
