@@ -23169,7 +23169,7 @@
 										}
 									]
 								},
-								"description": "Set the automatic video recording time."
+								"description": "Set the automatic recording time for the video."
 							},
 							"response": []
 						}
