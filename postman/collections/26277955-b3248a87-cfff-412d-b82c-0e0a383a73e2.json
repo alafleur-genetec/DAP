@@ -22990,11 +22990,11 @@
 										{
 											"key": "q",
 											"value": "entity={{alarm}},ReactivationThreshold={{value}}",
-											"description": "- **alarm:** Alarm GUID or logical ID\n- **recipient:** Recipient GUID or logical ID"
+											"description": "- **alarm:** Alarm GUID or logical ID\n- **value:** Reactivation threshold (TimeSpan)"
 										}
 									]
 								},
-								"description": "Set the alarm reactivation threshold"
+								"description": "Set the alarm reactivation threshold."
 							},
 							"response": []
 						},
