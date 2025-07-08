@@ -23164,10 +23164,12 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "entity={{alarm}},AlarmRecordingTime={{recordingTime}}"
+											"value": "entity={{alarm}},AlarmRecordingTime={{recordingTime}}",
+											"description": "- **alarm:** Alarm GUID or logical ID\n- **recordingTime:** Recording time (TimeSpan)"
 										}
 									]
-								}
+								},
+								"description": "Set the automatic video recording time."
 							},
 							"response": []
 						}
