@@ -22993,7 +22993,8 @@
 											"description": "**alarm:** Alarm GUID or logical ID"
 										}
 									]
-								}
+								},
+								"description": "Set the alarm reactivation threshold"
 							},
 							"response": []
 						},
