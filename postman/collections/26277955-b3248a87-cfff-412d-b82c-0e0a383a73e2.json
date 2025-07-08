@@ -23094,8 +23094,7 @@
 											"description": "**alarm:** Alarm GUID or logical ID\n**alarmUrl:** URL to display in the tile"
 										}
 									]
-								},
-								"description": "Set the alarm color.\nThe following alarm colors are supported:\n\n- Black\n- Gray\n- White\n- Dark Blue\n- Blue\n- Cyan\n- Dark Green\n- Green\n- Red\n- Dark Red\n- Orange\n- Yellow\n- Indigo"
+								}
 							},
 							"response": [
 								{
