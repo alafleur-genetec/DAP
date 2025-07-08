@@ -23143,6 +23143,18 @@
 									"body": "{\n    \"Rsp\": {\n        \"Status\": \"Ok\"\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "New Request",
+							"id": "26277955-b4a55213-58e6-492e-aa04-be3952e7b557",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "26277955-9075befa-257c-43e1-a12b-a27cdb6232f4",
