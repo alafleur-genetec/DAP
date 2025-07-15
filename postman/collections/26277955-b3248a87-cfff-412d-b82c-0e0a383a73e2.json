@@ -23175,7 +23175,7 @@
 						}
 					],
 					"id": "26277955-9075befa-257c-43e1-a12b-a27cdb6232f4",
-					"description": "API to view, trigger and acknowledge alarms.\n\nAn alarm entity describes a particular type of trouble situation that requires immediate attention and how it can be handled in Security Center. For example, an alarm can indicate which entities (usually cameras and doors) best describe the situation, who must be notified, how it must be displayed to the user, and so on."
+					"description": "API to view, trigger, and acknowledge alarms.\n\nAn alarm entity describes a particular type of trouble situation that requires immediate attention and how it can be handled in Security Center. For example, an alarm can indicate which entities (usually cameras and doors) best describe the situation, who must be notified, how it must be displayed to the user, and so on."
 				},
 				{
 					"name": "Alarm panel input",
