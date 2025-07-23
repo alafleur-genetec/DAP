@@ -3677,7 +3677,7 @@
 							"script": {
 								"id": "744d438f-21e0-4bd4-83e8-05d55387bc4a",
 								"exec": [
-									"pm.variables.set(\"color\", \"{{$randomColor}}\");"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
