@@ -34673,7 +34673,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Set door lock device",
 							"id": "26277955-be9feb72-a6f9-4b15-a157-acb67c5c1bb7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
