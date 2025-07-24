@@ -34692,7 +34692,8 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "entity={{door}},DoorLockDevice={{device}}"
+											"value": "entity={{door}},DoorLockDevice={{device}}",
+											"description": "- **door:** Door GUID or logical ID\n- **device:** Device GUID or logical ID"
 										}
 									]
 								}
