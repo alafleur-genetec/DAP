@@ -34696,7 +34696,8 @@
 											"description": "- **door:** Door GUID or logical ID\n- **device:** Device GUID or logical ID"
 										}
 									]
-								}
+								},
+								"description": "Set the door's lock device"
 							},
 							"response": []
 						}
