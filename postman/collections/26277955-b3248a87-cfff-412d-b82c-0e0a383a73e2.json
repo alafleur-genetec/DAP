@@ -34671,6 +34671,18 @@
 								"description": "Remove an unlock schedule from a door"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "26277955-be9feb72-a6f9-4b15-a157-acb67c5c1bb7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "26277955-7c63bb10-5be9-4300-9518-967dafd95584",
