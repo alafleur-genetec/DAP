@@ -34697,7 +34697,7 @@
 										}
 									]
 								},
-								"description": "Set the door's lock device"
+								"description": "Set the door's lock device."
 							},
 							"response": []
 						}
