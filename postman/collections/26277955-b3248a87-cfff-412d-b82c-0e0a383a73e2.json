@@ -3343,7 +3343,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/action?q=DisplayEntityInSecurityDesk({{recipient }},{{entity}},{{forceDisplay}})",
+									"raw": "{{url}}/action?q=DisplayEntityInSecurityDesk({{recipient }},{{entity}},{{forceDisplay}}, {{enableAudio}})",
 									"host": [
 										"{{url}}"
 									],
@@ -3353,8 +3353,8 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "DisplayEntityInSecurityDesk({{recipient }},{{entity}},{{forceDisplay}})",
-											"description": "- **recipient**: User GUID or logical ID\n- **entity**: Entity GUID or logical ID\n- **forceDisplay**: boolean"
+											"value": "DisplayEntityInSecurityDesk({{recipient }},{{entity}},{{forceDisplay}}, {{enableAudio}})",
+											"description": "- **recipient**: User GUID or logical ID\n- **entity**: Entity GUID or logical ID\n- **forceDisplay**: boolean\n- **enableAudio**: boolean"
 										}
 									]
 								},
