@@ -2108,109 +2108,115 @@
 							"id": "26277955-4c793736-677f-4891-b6a1-89945f631766"
 						},
 						{
-							"name": "Add a camera bookmark",
-							"event": [
+							"name": "Bookmark",
+							"item": [
 								{
-									"listen": "prerequest",
-									"script": {
-										"id": "e36d31aa-567d-4a4d-9b3f-c30fa770f1d9",
-										"exec": [
-											"// Create a new Date object representing the current date and time\r",
-											"const currentDate = new Date();\r",
-											"\r",
-											"pm.variables.set('camera', '00000001-0000-babe-0000-26551ec56587')\r",
-											"pm.variables.set('timestamp', currentDate.toISOString());\r",
-											"pm.variables.set('description', 'test');"
-										],
-										"type": "text/javascript",
-										"packages": {}
-									}
+									"name": "Add a camera bookmark",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"id": "e36d31aa-567d-4a4d-9b3f-c30fa770f1d9",
+												"exec": [
+													"// Create a new Date object representing the current date and time\r",
+													"const currentDate = new Date();\r",
+													"\r",
+													"pm.variables.set('camera', '00000001-0000-babe-0000-26551ec56587')\r",
+													"pm.variables.set('timestamp', currentDate.toISOString());\r",
+													"pm.variables.set('description', 'test');"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"id": "26277955-dd2d20b2-4b79-4f35-bc6a-a2630ee5c511",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/action?q=AddCameraBookmark({{camera}},{{timestamp}},{{description}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"action"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "AddCameraBookmark({{camera}},{{timestamp}},{{description}})",
+													"description": "- **camera:** Camera GUID or logical ID  \n- **timestamp:** Timestamp of bookmark  \n- **description:** Description of the bookmark"
+												}
+											]
+										},
+										"description": "Adds a bookmark to a video sequence.\n\n### What you should know\n\n- A bookmark is an indicator of an event or incident that is used to mark a specific point in time in a recorded video sequence. A bookmark also contains a short text description that can be used to search for and review the video sequences at a later time.\n- If a camera is not currently recording, adding a bookmark forces it to begin recording.\n- If you add a bookmark to an exported video clip, the bookmark is only stored in the exported video clip and not the original archived video."
+									},
+									"response": []
+								},
+								{
+									"name": "Delete a camera bookmark",
+									"id": "26277955-616579bc-5c2d-4b82-a338-f5fcb62eec09",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/action?q=DeleteCameraBookmark({{camera}},{{timestamp}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"action"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "DeleteCameraBookmark({{camera}},{{timestamp}})",
+													"description": "- **camera:** Camera GUID or logical ID\n- **timestamp:** Timestamp of bookmark"
+												}
+											]
+										},
+										"description": "Delete a bookmark of a video sequence."
+									},
+									"response": []
+								},
+								{
+									"name": "Edit a camera bookmark",
+									"id": "26277955-9d007283-74be-489c-bd3f-909d01e44d65",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/action?q=EditCameraBookmark({{camera}},{{timestamp}},{{description}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"action"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "EditCameraBookmark({{camera}},{{timestamp}},{{description}})",
+													"description": "- **camera:** Camera GUID or logical ID\n- **timestamp:** Timestamp of bookmark\n- **description:** The new description of the bookmark"
+												}
+											]
+										},
+										"description": "Edit the description of a camera playback bookmark."
+									},
+									"response": []
 								}
 							],
-							"id": "26277955-dd2d20b2-4b79-4f35-bc6a-a2630ee5c511",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/action?q=AddCameraBookmark({{camera}},{{timestamp}},{{description}})",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"action"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "AddCameraBookmark({{camera}},{{timestamp}},{{description}})",
-											"description": "- **camera:** Camera GUID or logical ID  \n- **timestamp:** Timestamp of bookmark  \n- **description:** Description of the bookmark"
-										}
-									]
-								},
-								"description": "Adds a bookmark to a video sequence.\n\n### What you should know\n\n- A bookmark is an indicator of an event or incident that is used to mark a specific point in time in a recorded video sequence. A bookmark also contains a short text description that can be used to search for and review the video sequences at a later time.\n- If a camera is not currently recording, adding a bookmark forces it to begin recording.\n- If you add a bookmark to an exported video clip, the bookmark is only stored in the exported video clip and not the original archived video."
-							},
-							"response": []
-						},
-						{
-							"name": "Delete a camera bookmark",
-							"id": "26277955-616579bc-5c2d-4b82-a338-f5fcb62eec09",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/action?q=DeleteCameraBookmark({{camera}},{{timestamp}})",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"action"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "DeleteCameraBookmark({{camera}},{{timestamp}})",
-											"description": "- **camera:** Camera GUID or logical ID\n- **timestamp:** Timestamp of bookmark"
-										}
-									]
-								},
-								"description": "Delete a bookmark of a video sequence."
-							},
-							"response": []
-						},
-						{
-							"name": "Edit a camera bookmark",
-							"id": "26277955-9d007283-74be-489c-bd3f-909d01e44d65",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/action?q=EditCameraBookmark({{camera}},{{timestamp}},{{description}})",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"action"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "EditCameraBookmark({{camera}},{{timestamp}},{{description}})",
-											"description": "- **camera:** Camera GUID or logical ID\n- **timestamp:** Timestamp of bookmark\n- **description:** The new description of the bookmark"
-										}
-									]
-								},
-								"description": "Edit the description of a camera playback bookmark."
-							},
-							"response": []
+							"id": "26277955-2562f25e-ac00-4d50-8289-ae33cd015f4b"
 						},
 						{
 							"name": "Add video protection",
