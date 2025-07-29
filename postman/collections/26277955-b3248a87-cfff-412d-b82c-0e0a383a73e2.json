@@ -3305,7 +3305,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Display entity in Security Desk",
 							"id": "26277955-f99a82a8-51d1-4aec-a0e6-623e98419b29",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
