@@ -3328,7 +3328,37 @@
 											"description": "- **recipient**: User GUID or logical ID\n- **entity**: Entity GUID or logical ID\n- **forceDisplay**: boolean"
 										}
 									]
-								}
+								},
+								"description": "Displays an entity in Security Desk, specifying the Security Center user or group as the recipient."
+							},
+							"response": []
+						},
+						{
+							"name": "Display entity in Security Desk",
+							"id": "26277955-2bd66ef4-d81d-449f-8d12-4f4c83d54dd2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/action?q=DisplayEntityInSecurityDesk({{recipient }},{{entity}},{{forceDisplay}})",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"action"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "DisplayEntityInSecurityDesk({{recipient }},{{entity}},{{forceDisplay}})",
+											"description": "- **recipient**: User GUID or logical ID\n- **entity**: Entity GUID or logical ID\n- **forceDisplay**: boolean"
+										}
+									]
+								},
+								"description": "Displays an entity in Security Desk, specifying the Security Center user or group as the recipient."
 							},
 							"response": []
 						}
