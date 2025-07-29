@@ -2875,7 +2875,7 @@
 							]
 						},
 						{
-							"name": "Clear a tile in monitoring task",
+							"name": "Clear tile",
 							"event": [
 								{
 									"listen": "prerequest",
