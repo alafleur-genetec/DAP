@@ -3054,7 +3054,7 @@
 										{
 											"key": "q",
 											"value": "DisplayInTile({{monitor}},{{xmlcontent}})",
-											"description": "- **tile**: Tile ID (integer)\n- **xmlcontent**: The serialized xml content"
+											"description": "- **monitor**: Monitor ID (integer)\n\n- **xmlcontent**: The serialized xml content"
 										}
 									]
 								},
