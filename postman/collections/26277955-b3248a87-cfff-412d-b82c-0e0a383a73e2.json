@@ -2958,7 +2958,7 @@
 										}
 									]
 								},
-								"description": "Clear the tasks displayed on the specified monitor."
+								"description": "Clears the tasks displayed on the specified monitor."
 							},
 							"response": []
 						},
