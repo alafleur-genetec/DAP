@@ -3138,7 +3138,7 @@
 										{
 											"key": "q",
 											"value": "DisplayInTile({{monitor}},{{xmlcontent}},{{forceDisplay}})",
-											"description": "- **monitor**: Monitor ID (integer)\n\n- **xmlcontent**: The serialized xml content\n- **forceDisplay**: Specifies whether to switch focus to an existing or new Monitoring page when the content cannot be displayed on the active page. (bool)"
+											"description": "- **monitor**: Monitor ID (integer)\n- **xmlcontent**: The serialized xml content\n- **forceDisplay**: Specifies whether to switch focus to an existing or new Monitoring page when the content cannot be displayed on the active page. (bool)"
 										}
 									]
 								},
