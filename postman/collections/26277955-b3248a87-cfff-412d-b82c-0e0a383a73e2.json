@@ -1951,7 +1951,7 @@
 							"description": "Sends a PTZ command to a camera.\n\n| Command | Description |\n| --- | --- |\n| Alarm | Kalatel Cyberdome command |\n| Clear | Kalatel Cyberdome command |\n| ClearAuxiliary | Clear the auxiliary action. |\n| ClearPattern | Clear a pattern. |\n| ClearPreset | Remove a preset XYZ location. |\n| Eject | VCR specific command |\n| Enter | Enter |\n| Fastfoward | VCR specific command |\n| First | Kalatel Cyberdome command |\n| Flip | Flip |\n| GetPosition | Get the current position. |\n| GoToAbsolutePosition | Go to an absolute position. |\n| GoToImagePosition | Center to a point selected in the video image streamed by the ptz camera and zoom to a relative ratio. |\n| GoToNormalizedPosition | Go to a position defined in the xml string parameter. |\n| GoToPosition | Go to a specific position. |\n| GoToPreset | Go to a preset XYZ location. |\n| GoToRelativePosition | Go to a position relative to where it is now. |\n| Home | Go to Home |\n| LastCommand | The last PTZ command. |\n| Lock | Explicitly lock camera for a user |\n| MenuBank | Kalatel Cyberdome command |\n| MenuCancel | Cancel the menu operation. |\n| MenuDown | Go down in the menu. |\n| MenuDownDown | Menu down down. |\n| MenuDownUp | Menu down up. |\n| MenuExit | Kalatel Cyberdome command |\n| MenuLeft | Go left in the menu. |\n| MenuLeftDown | Menu left down. |\n| MenuLeftUp | Menu left up. |\n| MenuNext | Go to the next menu. |\n| MenuNumber | Kalatel Cyberdome command |\n| MenuOff | The menu is off. |\n| MenuOn | The menu is on. |\n| MenuPrevious | Go to the previous menu. |\n| MenuRight | Go right in the menu. |\n| MenuRightDown | Menu right then down. |\n| MenuRightUp | Menu right up. |\n| MenuScrollDown | Kalatel Cyberdome command |\n| MenuScrollLeft | Kalatel Cyberdome command |\n| MenuScrollRight | Kalatel Cyberdome command |\n| MenuScrollUp | Kalatel Cyberdome command |\n| MenuStart | Kalatel Cyberdome command |\n| MenuStop | Stop the menu. |\n| MenuTextMode | Menu text mode. |\n| MenuUp | Go up in the menu. |\n| MenuUpDown | Menu up down. |\n| MenuUpUp | Menu up up |\n| NextFrame | VCR specific command |\n| OverrideLock | Override explicit lock |\n| Pause | VCR specific command |\n| Play | VCR specific command |\n| PrevKeyFrame | VCR specific command |\n| Record | VCR specific command |\n| Rewind | VCR specific command |\n| RunPattern | Run a pattern. |\n| RunSequence | Run a sequence. |\n| RunTour | Run a tour. |\n| Sequence | Kalatel Cyberdome command |\n| Set | Kalatel Cyberdome command |\n| SetAuxiliary | Set the auxiliary action. |\n| SetPositionZero | Set the position to the PTZ 0 |\n| SetPreset | Set a preset XYZ location. |\n| SpecificCommand | A specific PTZ command. |\n| StartFocus | Start Focus. |\n| StartIris | Start the iris. |\n| StartPanTilt | Start Pan and/or tilt. |\n| StartPattern | Start a preset pattern of movement. |\n| StartPresetTour | Start a preset tour. |\n| StartZoom | Start Zooming. |\n| Stop | VCR specific command |\n| StopFocus | Stop focus. |\n| StopIris | Stop the iris. |\n| StopPanTilt | Stop Pan and/or tilt. |\n| StopPattern | Stop a pattern. |\n| StopPresetTour | Stop current preset tour. |\n| StopZoom | Stop Zooming. |\n| Vcr | VCR specific command |"
 						},
 						{
-							"name": "Stop recording",
+							"name": "Recording",
 							"item": [
 								{
 									"name": "Stop camera recording",
@@ -2010,13 +2010,7 @@
 										"description": "Stop the recording of a video camera."
 									},
 									"response": []
-								}
-							],
-							"id": "26277955-b2606db7-1e6b-48af-9270-817a496335c4"
-						},
-						{
-							"name": "Start recording",
-							"item": [
+								},
 								{
 									"name": "Start camera recording",
 									"id": "26277955-0dc8a433-db73-4dd5-be0c-603f7b9498d6",
@@ -2105,6 +2099,11 @@
 									"response": []
 								}
 							],
+							"id": "26277955-b2606db7-1e6b-48af-9270-817a496335c4"
+						},
+						{
+							"name": "Start recording",
+							"item": [],
 							"id": "26277955-4c793736-677f-4891-b6a1-89945f631766"
 						},
 						{
