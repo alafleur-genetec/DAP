@@ -3142,7 +3142,7 @@
 										}
 									]
 								},
-								"description": "Display content in the Security Desk, specifying the Monitor Id as the destination."
+								"description": "Display the specified content in a Security Desk monitoring task."
 							},
 							"response": []
 						},
@@ -3184,7 +3184,7 @@
 										}
 									]
 								},
-								"description": "Display content in the Security Desk, specifying the Monitor Id as the destination."
+								"description": "Display the specified content in a Security Desk monitoring task."
 							},
 							"response": []
 						},
