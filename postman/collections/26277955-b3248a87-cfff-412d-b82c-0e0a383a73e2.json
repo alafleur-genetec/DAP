@@ -3303,6 +3303,18 @@
 								"description": "Show protected streams for all tiles in the Security Desk displayed monitoring tasks, specifying the Security Center user or group as the recipient."
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "26277955-f99a82a8-51d1-4aec-a0e6-623e98419b29",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "26277955-d84b7224-d0f1-4f9b-828b-39a7650d3a33",
