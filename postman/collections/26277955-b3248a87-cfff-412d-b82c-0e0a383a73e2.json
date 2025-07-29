@@ -3311,8 +3311,24 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/action?q=DisplayEntityInSecurityDesk({{recipient }},{{entity}},{{forceDisplay}})",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"action"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "DisplayEntityInSecurityDesk({{recipient }},{{entity}},{{forceDisplay}})",
+											"description": "- **recipient**: User GUID or logical ID\n- **entity**: Entity GUID or logical ID\n- **forceDisplay**: boolean"
+										}
+									]
+								}
 							},
 							"response": []
 						}
