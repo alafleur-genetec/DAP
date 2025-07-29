@@ -2943,7 +2943,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/action?q=ClearTasksOnMonitor(65)",
+									"raw": "{{url}}/action?q=ClearTasksOnMonitor({{monitorId}})",
 									"host": [
 										"{{url}}"
 									],
@@ -2953,7 +2953,7 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "ClearTasksOnMonitor(65)",
+											"value": "ClearTasksOnMonitor({{monitorId}})",
 											"description": "**monitor**: Monitor ID"
 										}
 									]
