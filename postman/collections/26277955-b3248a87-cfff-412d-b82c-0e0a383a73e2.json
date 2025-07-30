@@ -29651,7 +29651,7 @@
 									"response": []
 								},
 								{
-									"name": "Find unassigned credentials Copy",
+									"name": "Find unassigned credentials with specific custom field value",
 									"id": "26277955-c4284016-2724-4779-93ba-d7ec845d2742",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -29660,7 +29660,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{url}}/report/CredentialConfiguration?q=UnassignedOnly=true",
+											"raw": "{{url}}/report/CredentialConfiguration?q=UnassignedOnly=true,CustomFields@CustomField({{customFieldGuid}},{{value}})",
 											"host": [
 												"{{url}}"
 											],
@@ -29671,7 +29671,8 @@
 											"query": [
 												{
 													"key": "q",
-													"value": "UnassignedOnly=true"
+													"value": "UnassignedOnly=true,CustomFields@CustomField({{customFieldGuid}},{{value}})",
+													"description": "- **customFieldGuid:** The GUID of the custom field\n- **value:** The value of the custom field"
 												}
 											]
 										},
