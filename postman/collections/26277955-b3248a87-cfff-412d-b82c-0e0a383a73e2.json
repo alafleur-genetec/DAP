@@ -29651,6 +29651,35 @@
 									"response": []
 								},
 								{
+									"name": "Find unassigned credentials Copy",
+									"id": "26277955-c4284016-2724-4779-93ba-d7ec845d2742",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/report/CredentialConfiguration?q=UnassignedOnly=true",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"report",
+												"CredentialConfiguration"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "UnassignedOnly=true"
+												}
+											]
+										},
+										"description": "Search for unassigned credentials."
+									},
+									"response": []
+								},
+								{
 									"name": "Find unused credentials",
 									"event": [
 										{
