@@ -30249,7 +30249,7 @@
 							"name": "Status",
 							"item": [
 								{
-									"name": "Activate a credential",
+									"name": "Activate",
 									"id": "26277955-2a09e1ab-69fa-4fda-be56-779702d059bf",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
