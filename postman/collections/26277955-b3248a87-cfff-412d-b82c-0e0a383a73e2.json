@@ -30301,12 +30301,13 @@
 													"description": "- **credential:** Credential GUID or logical ID\n- **activationDate:** Date of activation"
 												}
 											]
-										}
+										},
+										"description": "Activate on a specified date."
 									},
 									"response": []
 								},
 								{
-									"name": "Activate a credential",
+									"name": "Activate",
 									"id": "26277955-0bfc5fde-3f95-4e56-a9e1-3fec46beac53",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
