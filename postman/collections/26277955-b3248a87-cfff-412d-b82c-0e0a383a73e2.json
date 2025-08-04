@@ -28854,7 +28854,7 @@
 							"response": []
 						},
 						{
-							"name": "Set expiration if not used within a period Copy",
+							"name": "Set expiration to never",
 							"id": "26277955-bb8b08d4-6bfe-4cbe-bba3-c3cc5dad3d6c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -28863,7 +28863,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}});",
+									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.SetExpirationToNever()",
 									"host": [
 										"{{url}}"
 									],
@@ -28873,7 +28873,7 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}});",
+											"value": "entity={{cardholder}},Status.SetExpirationToNever()",
 											"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
 										}
 									]
