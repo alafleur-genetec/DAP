@@ -28119,6 +28119,34 @@
 									"response": []
 								},
 								{
+									"name": "Activate cardholder",
+									"id": "26277955-8d50213e-6059-4d59-90ab-d9b78b079003",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Activate()",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.Activate()",
+													"description": "**cardholder:** Cardholder GUID of logical ID"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
 									"name": "Deactivate cardholder",
 									"id": "26277955-afdb9510-e646-495c-a268-39b27686f579",
 									"protocolProfileBehavior": {
@@ -28196,34 +28224,6 @@
 													"key": "q",
 													"value": "entity={{cardholder}},Status.Activate({{activationDate}})",
 													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "Activate cardholder",
-									"id": "26277955-8d50213e-6059-4d59-90ab-d9b78b079003",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Activate()",
-											"host": [
-												"{{url}}"
-											],
-											"path": [
-												"entity"
-											],
-											"query": [
-												{
-													"key": "q",
-													"value": "entity={{cardholder}},Status.Activate()",
-													"description": "**cardholder:** Cardholder GUID of logical ID"
 												}
 											]
 										}
