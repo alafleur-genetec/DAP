@@ -28825,14 +28825,29 @@
 							"response": []
 						},
 						{
-							"name": "Set expiration",
+							"name": "Set expiration when not used after period",
 							"id": "26277955-436bb21c-8400-4649-9285-af601a60427b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}});",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"entity"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}});"
+										}
+									]
+								}
 							},
 							"response": []
 						}
