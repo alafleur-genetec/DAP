@@ -28878,7 +28878,7 @@
 										}
 									]
 								},
-								"description": "Deactivate the cardholder after a specific number of days from the first use."
+								"description": "Deactivate the cardholder a specific number of days after the first use."
 							},
 							"response": []
 						},
