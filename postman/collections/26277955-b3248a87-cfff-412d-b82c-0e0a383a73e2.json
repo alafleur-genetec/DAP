@@ -30388,7 +30388,8 @@
 													"description": "- **credential:** Credential GUID or logical ID\n- **expirationDate:** Deactivation date"
 												}
 											]
-										}
+										},
+										"description": "Deactivate on a set date."
 									},
 									"response": []
 								},
