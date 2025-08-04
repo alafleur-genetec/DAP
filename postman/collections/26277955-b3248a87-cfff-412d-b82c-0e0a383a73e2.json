@@ -30272,12 +30272,13 @@
 													"description": "**credential:** Credential GUID or logical ID"
 												}
 											]
-										}
+										},
+										"description": "Activate now."
 									},
 									"response": []
 								},
 								{
-									"name": "Activate a credential",
+									"name": "Activate",
 									"id": "26277955-b87116b0-4818-406f-85c1-8d7ead2b8a4f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
