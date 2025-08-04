@@ -28847,7 +28847,8 @@
 											"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}});"
 										}
 									]
-								}
+								},
+								"description": "Deactivate a cardholder account after a specified number of days of inactivity."
 							},
 							"response": []
 						}
