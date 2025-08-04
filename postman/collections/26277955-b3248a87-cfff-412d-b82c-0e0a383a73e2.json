@@ -30530,7 +30530,7 @@
 												{
 													"key": "q",
 													"value": "entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
-													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
+													"description": "- **credential:** Credential GUID or logical ID\n- **days:** Number of inactive days"
 												}
 											]
 										},
