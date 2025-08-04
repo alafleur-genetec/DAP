@@ -30446,7 +30446,8 @@
 													"description": "- **credential:** Credential GUID or logical ID\n- **cardholder:** Cardholder GUID or logical ID"
 												}
 											]
-										}
+										},
+										"description": "Mark a credential as lost."
 									},
 									"response": []
 								}
