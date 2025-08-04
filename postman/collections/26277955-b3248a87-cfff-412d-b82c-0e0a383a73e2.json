@@ -28173,7 +28173,7 @@
 												}
 											]
 										},
-										"description": "Set the expiration date for the cardholder access status to \"Never\"."
+										"description": "Configure the expiration date to never expire."
 									},
 									"response": []
 								},
