@@ -28171,7 +28171,8 @@
 													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date\n- **deactivationDate:** Deactivation date"
 												}
 											]
-										}
+										},
+										"description": "Activate on a specified date and deactivate on a specified date."
 									},
 									"response": []
 								},
