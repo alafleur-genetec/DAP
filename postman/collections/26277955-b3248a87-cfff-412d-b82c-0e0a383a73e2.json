@@ -28834,7 +28834,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}});",
+									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
 									"host": [
 										"{{url}}"
 									],
@@ -28844,7 +28844,7 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}});",
+											"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
 											"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
 										}
 									]
