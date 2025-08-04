@@ -28086,7 +28086,7 @@
 												}
 											]
 										},
-										"description": "Activate on a specified date."
+										"description": "Activate on a specific date."
 									},
 									"response": []
 								},
