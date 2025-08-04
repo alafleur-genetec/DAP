@@ -28144,7 +28144,7 @@
 												}
 											]
 										},
-										"description": "Deactivate on a specific date."
+										"description": "Deactivate by a specific date."
 									},
 									"response": []
 								},
