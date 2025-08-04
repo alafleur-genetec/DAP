@@ -28142,7 +28142,8 @@
 													"description": "**cardholder:** Cardholder GUID of logical ID"
 												}
 											]
-										}
+										},
+										"description": "Activate now"
 									},
 									"response": []
 								},
