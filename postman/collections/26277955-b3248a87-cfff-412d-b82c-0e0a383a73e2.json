@@ -28201,6 +28201,34 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Activate cardholder",
+									"id": "26277955-8d50213e-6059-4d59-90ab-d9b78b079003",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Activate()",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.Activate()",
+													"description": "**cardholder:** Cardholder GUID of logical ID"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "26277955-2f1db84f-7ba9-4a0c-befa-c9e8d8d37150"
@@ -28587,34 +28615,6 @@
 									"body": "{\n    \"Rsp\": {\n        \"Status\": \"Ok\",\n        \"Result\": {\n            \"Credentials\": [\n                \"9ed3ca57-762c-4eef-82bd-ad93a1361021\"\n            ]\n        }\n    }\n}"
 								}
 							]
-						},
-						{
-							"name": "Activate cardholder",
-							"id": "26277955-8d50213e-6059-4d59-90ab-d9b78b079003",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Activate()",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{cardholder}},Status.Activate()",
-											"description": "**cardholder:** Cardholder GUID of logical ID"
-										}
-									]
-								}
-							},
-							"response": []
 						},
 						{
 							"name": "Assign cardholder to cardholder group (Obsolete)",
