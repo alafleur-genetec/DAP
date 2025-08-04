@@ -28175,7 +28175,7 @@
 									"response": []
 								},
 								{
-									"name": "Set activation and deactivation dates",
+									"name": "Activate",
 									"id": "26277955-7deace9b-ac4c-421c-bce8-3a1b773c5a57",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -28203,7 +28203,7 @@
 									"response": []
 								},
 								{
-									"name": "Activate cardholder at specify date",
+									"name": "Activate",
 									"id": "26277955-eef1fd44-8b19-489e-8ee9-17a134d71cd6",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
