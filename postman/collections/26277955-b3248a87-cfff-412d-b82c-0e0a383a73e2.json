@@ -30417,7 +30417,8 @@
 													"description": "**credential:** Credential GUID or logical ID"
 												}
 											]
-										}
+										},
+										"description": "Mark a credential as stolen."
 									},
 									"response": []
 								},
