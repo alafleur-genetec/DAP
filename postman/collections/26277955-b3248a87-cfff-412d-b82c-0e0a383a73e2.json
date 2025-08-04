@@ -28503,34 +28503,6 @@
 							]
 						},
 						{
-							"name": "Update cardholder",
-							"id": "26277955-5b0c6830-6f8e-43c2-acc7-6c7add9857c2",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{cardholder}},FirstName={{firstName}},LastName={{lastName}},EmailAddress={{email}},MobilePhoneNumber={{phoneNumber}}",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{cardholder}},FirstName={{firstName}},LastName={{lastName}},EmailAddress={{email}},MobilePhoneNumber={{phoneNumber}}",
-											"description": "**cardholder:** Cardholder GUID of logical ID"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "Get credentials",
 							"id": "26277955-c534e802-9ebc-47ed-bff8-0bb9e5104fdf",
 							"protocolProfileBehavior": {
