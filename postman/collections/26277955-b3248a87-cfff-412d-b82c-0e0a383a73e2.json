@@ -28863,7 +28863,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
+									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
 									"host": [
 										"{{url}}"
 									],
@@ -28873,12 +28873,12 @@
 									"query": [
 										{
 											"key": "q",
-											"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
+											"value": "entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
 											"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
 										}
 									]
 								},
-								"description": "Deactivate a cardholder account after a specified number of days of inactivity."
+								"description": "Deactivate the cardholder after a specific number of days from the first use."
 							},
 							"response": []
 						},
