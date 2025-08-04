@@ -30336,7 +30336,7 @@
 									"response": []
 								},
 								{
-									"name": "Deactivate a credential",
+									"name": "Deactivate",
 									"id": "26277955-28adea94-8b56-42a5-8cde-f7433e539919",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -30359,7 +30359,8 @@
 													"description": "**credential:** Credential GUID or logical ID"
 												}
 											]
-										}
+										},
+										"description": "Deactivate now."
 									},
 									"response": []
 								},
