@@ -28117,6 +28117,90 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Deactivate cardholder",
+									"id": "26277955-afdb9510-e646-495c-a268-39b27686f579",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Deactivate()",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.Deactivate()",
+													"description": "**cardholder:** Cardholder GUID of logical ID"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Set activation and deactivation dates",
+									"id": "26277955-7deace9b-ac4c-421c-bce8-3a1b773c5a57",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Activate({{activationDate}},{{deactivationDate}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.Activate({{activationDate}},{{deactivationDate}})",
+													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date\n- **deactivationDate:** Deactivation date"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Activate cardholder at specify date",
+									"id": "26277955-eef1fd44-8b19-489e-8ee9-17a134d71cd6",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Activate({{activationDate}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.Activate({{activationDate}})",
+													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "26277955-2f1db84f-7ba9-4a0c-befa-c9e8d8d37150"
@@ -28525,90 +28609,6 @@
 										{
 											"key": "q",
 											"value": "entity={{cardholder}},Status.Activate()",
-											"description": "**cardholder:** Cardholder GUID of logical ID"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Activate cardholder at specify date",
-							"id": "26277955-eef1fd44-8b19-489e-8ee9-17a134d71cd6",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Activate({{activationDate}})",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{cardholder}},Status.Activate({{activationDate}})",
-											"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Set activation and deactivation dates",
-							"id": "26277955-7deace9b-ac4c-421c-bce8-3a1b773c5a57",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Activate({{activationDate}},{{deactivationDate}})",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{cardholder}},Status.Activate({{activationDate}},{{deactivationDate}})",
-											"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date\n- **deactivationDate:** Deactivation date"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Deactivate cardholder",
-							"id": "26277955-afdb9510-e646-495c-a268-39b27686f579",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Deactivate()",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{cardholder}},Status.Deactivate()",
 											"description": "**cardholder:** Cardholder GUID of logical ID"
 										}
 									]
