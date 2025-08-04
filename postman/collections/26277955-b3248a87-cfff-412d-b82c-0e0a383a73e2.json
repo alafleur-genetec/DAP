@@ -30246,6 +30246,11 @@
 							"id": "26277955-642f9ab5-3171-433d-8b43-95a9495edb21"
 						},
 						{
+							"name": "Status",
+							"item": [],
+							"id": "26277955-bacdc7c3-8ff4-43fc-b962-745a5d0ef3cc"
+						},
+						{
 							"name": "Get credential",
 							"id": "26277955-3721a659-4a66-4a6a-b5c1-1dda864be6a8",
 							"protocolProfileBehavior": {
