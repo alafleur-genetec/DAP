@@ -30387,6 +30387,62 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Mark a credential as stolen",
+									"id": "26277955-9b81a9bd-6a57-4f6f-8f39-32c75f391d99",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{credential}},Status.Stolen()",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{credential}},Status.Stolen()",
+													"description": "**credential:** Credential GUID or logical ID"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Mark a credential as lost",
+									"id": "26277955-adda425b-8043-4402-8d85-57f399fa9834",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{credential}},Status.Lost()",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{credential}},Status.Lost()",
+													"description": "- **credential:** Credential GUID or logical ID\n- **cardholder:** Cardholder GUID or logical ID"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "26277955-bacdc7c3-8ff4-43fc-b962-745a5d0ef3cc"
@@ -32562,62 +32618,6 @@
 										{
 											"key": "q",
 											"value": "entity={{cardholder}},Credentials-{{credential}}",
-											"description": "- **credential:** Credential GUID or logical ID\n- **cardholder:** Cardholder GUID or logical ID"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Mark a credential as stolen",
-							"id": "26277955-9b81a9bd-6a57-4f6f-8f39-32c75f391d99",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{credential}},Status.Stolen()",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{credential}},Status.Stolen()",
-											"description": "**credential:** Credential GUID or logical ID"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Mark a credential as lost",
-							"id": "26277955-adda425b-8043-4402-8d85-57f399fa9834",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{credential}},Status.Lost()",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{credential}},Status.Lost()",
 											"description": "- **credential:** Credential GUID or logical ID\n- **cardholder:** Cardholder GUID or logical ID"
 										}
 									]
