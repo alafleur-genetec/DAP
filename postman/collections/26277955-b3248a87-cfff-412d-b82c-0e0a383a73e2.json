@@ -28004,93 +28004,6 @@
 							"name": "Status",
 							"item": [
 								{
-									"name": "Set expiration to never",
-									"id": "26277955-bb8b08d4-6bfe-4cbe-bba3-c3cc5dad3d6c",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.SetExpirationToNever()",
-											"host": [
-												"{{url}}"
-											],
-											"path": [
-												"entity"
-											],
-											"query": [
-												{
-													"key": "q",
-													"value": "entity={{cardholder}},Status.SetExpirationToNever()",
-													"description": "**cardholder:** Cardholder GUID of logical ID"
-												}
-											]
-										},
-										"description": "Set the expiration date for the cardholder access status to \"Never\"."
-									},
-									"response": []
-								},
-								{
-									"name": "Set to expire upon first use",
-									"id": "26277955-01449157-21e4-4e29-87bd-d32771a150a5",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
-											"host": [
-												"{{url}}"
-											],
-											"path": [
-												"entity"
-											],
-											"query": [
-												{
-													"key": "q",
-													"value": "entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
-													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
-												}
-											]
-										},
-										"description": "Deactivate the cardholder a specific number of days after the first use."
-									},
-									"response": []
-								},
-								{
-									"name": "Set expiration if not used within a period",
-									"id": "26277955-436bb21c-8400-4649-9285-af601a60427b",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
-											"host": [
-												"{{url}}"
-											],
-											"path": [
-												"entity"
-											],
-											"query": [
-												{
-													"key": "q",
-													"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
-													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
-												}
-											]
-										},
-										"description": "Deactivate a cardholder account after a specified number of days of inactivity."
-									},
-									"response": []
-								},
-								{
 									"name": "Activate",
 									"id": "26277955-8d50213e-6059-4d59-90ab-d9b78b079003",
 									"protocolProfileBehavior": {
@@ -28234,9 +28147,96 @@
 										"description": "Deactivate on a specific date."
 									},
 									"response": []
+								},
+								{
+									"name": "Set expiration to never",
+									"id": "26277955-bb8b08d4-6bfe-4cbe-bba3-c3cc5dad3d6c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.SetExpirationToNever()",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.SetExpirationToNever()",
+													"description": "**cardholder:** Cardholder GUID of logical ID"
+												}
+											]
+										},
+										"description": "Set the expiration date for the cardholder access status to \"Never\"."
+									},
+									"response": []
 								}
 							],
 							"id": "26277955-2f1db84f-7ba9-4a0c-befa-c9e8d8d37150"
+						},
+						{
+							"name": "Set expiration if not used within a period",
+							"id": "26277955-436bb21c-8400-4649-9285-af601a60427b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"entity"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
+											"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
+										}
+									]
+								},
+								"description": "Deactivate a cardholder account after a specified number of days of inactivity."
+							},
+							"response": []
+						},
+						{
+							"name": "Set to expire upon first use",
+							"id": "26277955-01449157-21e4-4e29-87bd-d32771a150a5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"entity"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
+											"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
+										}
+									]
+								},
+								"description": "Deactivate the cardholder a specific number of days after the first use."
+							},
+							"response": []
 						},
 						{
 							"name": "Get cardholder",
