@@ -30247,7 +30247,36 @@
 						},
 						{
 							"name": "Status",
-							"item": [],
+							"item": [
+								{
+									"name": "Activate a credential",
+									"id": "26277955-2a09e1ab-69fa-4fda-be56-779702d059bf",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{credential}},Status.Activate()",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{credential}},Status.Activate()",
+													"description": "**credential:** Credential GUID or logical ID"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
 							"id": "26277955-bacdc7c3-8ff4-43fc-b962-745a5d0ef3cc"
 						},
 						{
@@ -32369,34 +32398,6 @@
 									]
 								},
 								"description": "Changes a credential's format."
-							},
-							"response": []
-						},
-						{
-							"name": "Activate a credential",
-							"id": "26277955-2a09e1ab-69fa-4fda-be56-779702d059bf",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{credential}},Status.Activate()",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{credential}},Status.Activate()",
-											"description": "**credential:** Credential GUID or logical ID"
-										}
-									]
-								}
 							},
 							"response": []
 						},
