@@ -30365,7 +30365,7 @@
 									"response": []
 								},
 								{
-									"name": "Set deactivation date",
+									"name": "Deactivate",
 									"id": "26277955-cb225c02-c4f4-4347-890c-b0a9531ed1f8",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
