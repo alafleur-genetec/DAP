@@ -28091,34 +28091,6 @@
 									"response": []
 								},
 								{
-									"name": "Deactivate cardholder at specific date",
-									"id": "26277955-de884e00-82f4-41c5-9aa9-d07fe0d17c62",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Deactivate({{deactivationDate}})",
-											"host": [
-												"{{url}}"
-											],
-											"path": [
-												"entity"
-											],
-											"query": [
-												{
-													"key": "q",
-													"value": "entity={{cardholder}},Status.Deactivate({{deactivationDate}})",
-													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date\n- **deactivation:** Deactivation date"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
 									"name": "Activate",
 									"id": "26277955-8d50213e-6059-4d59-90ab-d9b78b079003",
 									"protocolProfileBehavior": {
@@ -28200,7 +28172,8 @@
 													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date"
 												}
 											]
-										}
+										},
+										"description": "Activate on a specified date."
 									},
 									"response": []
 								},
@@ -28230,6 +28203,34 @@
 											]
 										},
 										"description": "Deactivate now."
+									},
+									"response": []
+								},
+								{
+									"name": "Deactivate",
+									"id": "26277955-de884e00-82f4-41c5-9aa9-d07fe0d17c62",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.Deactivate({{deactivationDate}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.Deactivate({{deactivationDate}})",
+													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date\n- **deactivation:** Deactivation date"
+												}
+											]
+										}
 									},
 									"response": []
 								}
