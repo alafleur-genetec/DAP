@@ -30443,7 +30443,7 @@
 												{
 													"key": "q",
 													"value": "entity={{credential}},Status.Lost()",
-													"description": "- **credential:** Credential GUID or logical ID\n- **cardholder:** Cardholder GUID or logical ID"
+													"description": "**credential:** Credential GUID or logical ID"
 												}
 											]
 										},
