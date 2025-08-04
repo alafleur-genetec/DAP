@@ -28878,7 +28878,7 @@
 										}
 									]
 								},
-								"description": "Deactivate a cardholder account after a specified number of days of inactivity."
+								"description": "Set the expiration date for the cardholder access status to \"Never\"."
 							},
 							"response": []
 						}
