@@ -28057,7 +28057,7 @@
 												}
 											]
 										},
-										"description": "Activate on a specified date and deactivate on a specified date."
+										"description": "Activate on a specific date and deactivate on a specific date."
 									},
 									"response": []
 								},
