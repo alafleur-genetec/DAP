@@ -28823,6 +28823,18 @@
 								"description": "Unassign a credential from a cardholder."
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "26277955-436bb21c-8400-4649-9285-af601a60427b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "26277955-6b85997b-1754-4b31-8232-b7f10751d427",
