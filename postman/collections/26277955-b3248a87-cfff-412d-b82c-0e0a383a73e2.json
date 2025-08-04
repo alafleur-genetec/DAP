@@ -30452,7 +30452,7 @@
 									"response": []
 								},
 								{
-									"name": "Set expiration to never Copy",
+									"name": "Set expiration to never",
 									"id": "26277955-c06afec7-8fe7-443a-8cdb-3e7a221216d7",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -30461,7 +30461,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.SetExpirationToNever()",
+											"raw": "{{url}}/entity?q=entity={{credential}},Status.SetExpirationToNever()",
 											"host": [
 												"{{url}}"
 											],
@@ -30471,7 +30471,7 @@
 											"query": [
 												{
 													"key": "q",
-													"value": "entity={{cardholder}},Status.SetExpirationToNever()",
+													"value": "entity={{credential}},Status.SetExpirationToNever()",
 													"description": "**credential:** Credential GUID or logical ID"
 												}
 											]
@@ -30490,7 +30490,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
+											"raw": "{{url}}/entity?q=entity={{credential}},Status.ExpireWhenNotUsedInDays({{days}})",
 											"host": [
 												"{{url}}"
 											],
@@ -30500,7 +30500,7 @@
 											"query": [
 												{
 													"key": "q",
-													"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
+													"value": "entity={{credential}},Status.ExpireWhenNotUsedInDays({{days}})",
 													"description": "- **credential:** Credential GUID or logical ID\n- **days:** Number of inactive days"
 												}
 											]
@@ -30519,7 +30519,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
+											"raw": "{{url}}/entity?q=entity={{credential}},Status.ExpireOnFirstUseInDays({{days}})",
 											"host": [
 												"{{url}}"
 											],
@@ -30529,7 +30529,7 @@
 											"query": [
 												{
 													"key": "q",
-													"value": "entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
+													"value": "entity={{credential}},Status.ExpireOnFirstUseInDays({{days}})",
 													"description": "- **credential:** Credential GUID or logical ID\n- **days:** Number of inactive days"
 												}
 											]
