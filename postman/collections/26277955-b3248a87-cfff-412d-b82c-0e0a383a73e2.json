@@ -28230,7 +28230,8 @@
 													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **activationDate:** Activation date\n- **deactivation:** Deactivation date"
 												}
 											]
-										}
+										},
+										"description": "Deactivate on a specific date."
 									},
 									"response": []
 								}
