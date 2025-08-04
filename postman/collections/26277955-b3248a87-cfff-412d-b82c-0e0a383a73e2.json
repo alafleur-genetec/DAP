@@ -28171,7 +28171,8 @@
 													"description": "**cardholder:** Cardholder GUID of logical ID"
 												}
 											]
-										}
+										},
+										"description": "Deactivate now."
 									},
 									"response": []
 								},
