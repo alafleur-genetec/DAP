@@ -30472,7 +30472,7 @@
 												{
 													"key": "q",
 													"value": "entity={{cardholder}},Status.SetExpirationToNever()",
-													"description": "**cardholder:** Cardholder GUID of logical ID"
+													"description": "**credential:** Credential GUID or logical ID"
 												}
 											]
 										},
@@ -30501,7 +30501,7 @@
 												{
 													"key": "q",
 													"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
-													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
+													"description": "- **credential:** Credential GUID or logical ID\n- **days:** Number of inactive days"
 												}
 											]
 										},
