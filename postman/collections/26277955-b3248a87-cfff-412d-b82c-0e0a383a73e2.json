@@ -30303,6 +30303,90 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Activate a credential",
+									"id": "26277955-0bfc5fde-3f95-4e56-a9e1-3fec46beac53",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{credential}},Status.Activate({{activationDate}}, {{expirationDate}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{credential}},Status.Activate({{activationDate}}, {{expirationDate}})",
+													"description": "- **credential:** Credential GUID or logical ID\n- **activationDate:** Date of activation\n- **expirationDate:** Date of expiration"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Deactivate a credential",
+									"id": "26277955-28adea94-8b56-42a5-8cde-f7433e539919",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{credential}},Status.Deactivate()",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{credential}},Status.Deactivate()",
+													"description": "**credential:** Credential GUID or logical ID"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Set deactivation date",
+									"id": "26277955-cb225c02-c4f4-4347-890c-b0a9531ed1f8",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{credential}},Status.Deactivate({{expirationDate}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{credential}},Status.Deactivate({{expirationDate}})",
+													"description": "- **credential:** Credential GUID or logical ID\n- **expirationDate:** Deactivation date"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "26277955-bacdc7c3-8ff4-43fc-b962-745a5d0ef3cc"
@@ -32426,90 +32510,6 @@
 									]
 								},
 								"description": "Changes a credential's format."
-							},
-							"response": []
-						},
-						{
-							"name": "Activate a credential",
-							"id": "26277955-0bfc5fde-3f95-4e56-a9e1-3fec46beac53",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{credential}},Status.Activate({{activationDate}}, {{expirationDate}})",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{credential}},Status.Activate({{activationDate}}, {{expirationDate}})",
-											"description": "- **credential:** Credential GUID or logical ID\n- **activationDate:** Date of activation\n- **expirationDate:** Date of expiration"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Deactivate a credential",
-							"id": "26277955-28adea94-8b56-42a5-8cde-f7433e539919",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{credential}},Status.Deactivate()",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{credential}},Status.Deactivate()",
-											"description": "**credential:** Credential GUID or logical ID"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Set deactivation date",
-							"id": "26277955-cb225c02-c4f4-4347-890c-b0a9531ed1f8",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{url}}/entity?q=entity={{credential}},Status.Deactivate({{expirationDate}})",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"entity"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "entity={{credential}},Status.Deactivate({{expirationDate}})",
-											"description": "- **credential:** Credential GUID or logical ID\n- **expirationDate:** Deactivation date"
-										}
-									]
-								}
 							},
 							"response": []
 						},
