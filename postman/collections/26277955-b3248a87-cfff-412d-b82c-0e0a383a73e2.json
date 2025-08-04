@@ -30450,6 +30450,93 @@
 										"description": "Mark a credential as lost."
 									},
 									"response": []
+								},
+								{
+									"name": "Set expiration to never Copy",
+									"id": "26277955-c06afec7-8fe7-443a-8cdb-3e7a221216d7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.SetExpirationToNever()",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.SetExpirationToNever()",
+													"description": "**cardholder:** Cardholder GUID of logical ID"
+												}
+											]
+										},
+										"description": "Configure the expiration date to never expire."
+									},
+									"response": []
+								},
+								{
+									"name": "Set expiration if not used within a period Copy",
+									"id": "26277955-2b383a25-25f2-4602-afb0-fedc3babec75",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.ExpireWhenNotUsedInDays({{days}})",
+													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
+												}
+											]
+										},
+										"description": "Deactivate a cardholder account after a specified number of days of inactivity."
+									},
+									"response": []
+								},
+								{
+									"name": "Set to expire upon first use Copy",
+									"id": "26277955-0fcf3759-c37c-44a6-bb0e-4360205f7375",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/entity?q=entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"entity"
+											],
+											"query": [
+												{
+													"key": "q",
+													"value": "entity={{cardholder}},Status.ExpireOnFirstUseInDays({{days}})",
+													"description": "- **cardholder:** Cardholder GUID of logical ID\n- **days:** Number of inactive days"
+												}
+											]
+										},
+										"description": "Deactivate the cardholder a specific number of days after the first use."
+									},
+									"response": []
 								}
 							],
 							"id": "26277955-bacdc7c3-8ff4-43fc-b962-745a5d0ef3cc"
