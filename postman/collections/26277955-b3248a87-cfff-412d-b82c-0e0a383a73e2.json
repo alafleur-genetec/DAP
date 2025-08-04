@@ -30330,7 +30330,8 @@
 													"description": "- **credential:** Credential GUID or logical ID\n- **activationDate:** Date of activation\n- **expirationDate:** Date of expiration"
 												}
 											]
-										}
+										},
+										"description": "Activate on a specified date and deactivate on a specified date."
 									},
 									"response": []
 								},
