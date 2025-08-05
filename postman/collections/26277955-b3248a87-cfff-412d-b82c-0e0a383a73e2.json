@@ -32745,18 +32745,6 @@
 								}
 							},
 							"response": []
-						},
-						{
-							"name": "New Request",
-							"id": "26277955-bfc91a34-21e8-4fbb-bd1d-4828b29e38fb",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
 						}
 					],
 					"id": "26277955-35e15ed6-b7a1-437e-af99-50e784bef23e",
